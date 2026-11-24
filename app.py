@@ -14,7 +14,7 @@ chunks = chunker.chunk_transcript(transcript, video_id=video_id)
 
 # Initialize the vector store manager
 vector_store = vector_store.VectorStoreManager()
-# vector_store.add_documents(chunks)
+# vector_store.add_documents(chunks) #uncomment when creating the vector store for the first time.
 print(vector_store.count_documents())
 llm=Modle()
 while True:
