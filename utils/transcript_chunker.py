@@ -1,11 +1,10 @@
-
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 
 
 class TranscriptChunker:
 
-    def __init__(self, chunk_size=1000, chunk_overlap=200):
+    def __init__(self, chunk_size=500, chunk_overlap=100):
 
         self.text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=chunk_size,
