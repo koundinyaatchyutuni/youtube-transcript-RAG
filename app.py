@@ -26,5 +26,3 @@ while True:
     print(f"Prompt: {prompt}")
     response=llm.generate_response(prompt)
     print(response[0]['text'])
-user_prompt=input("Enter your question: ")
-print(transcript[:1000])
