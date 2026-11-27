@@ -54,7 +54,9 @@ class VectorStoreManager:
             ids=document_ids
         )
         print(f"Deleted {len(document_ids)} documents")
-
+        
+    def delete_all_chunks(self):
+        self.vector_store.reset_collection()
     # GET: Get documents using their IDs
     def get_documents(self, document_ids):
         return self.vector_store.get_by_ids(document_ids)
